@@ -21,6 +21,7 @@ def process_form():
     session['html_first_name'] = request.form['first_name']
     session['html_last_name'] = request.form['last_name']
     session['html_address'] = request.form['address']
+    session['html_uid'] = request.form['user_id']
 
     return redirect('/thanks')
 
